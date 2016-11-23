@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="RF2d" />
+		<Option pch_mode="2" />
+		<Option compiler="msvc8" />
+		<Build>
+			<Target title="Release Win32">
+				<Option platforms="Windows;" />
+				<Option output="testdirectory\RF2dEngine" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="C:\programming\Current Project\RF2dEngine" />
+				<Option object_output="obj" />
+				<Option type="0" />
+				<Option compiler="msvc8" />
+				<Compiler>
+					<Add option="/Ox" />
+					<Add option="/W3" />
+					<Add option="/Ob1" />
+					<Add option="/DWIN32" />
+					<Add option="/DNDEBUG" />
+					<Add option="/D_WINDOWS" />
+				</Compiler>
+				<Linker>
+					<Add library="..\..\3rdParty\luabind\msvc-8.0-sp1\lib\luabind.x86.release.lib" />
+					<Add library="..\..\3rdParty\lua\msvc-8.0-sp1\lib\lua.x86.release.lib" />
+				</Linker>
+				<ExtraCommands>
+					<Add after='&quot;C:\Program Files\upx303w\upx.exe&quot; -9 &quot;TestDirectory\RF2dEngine.exe&quot;' />
+					<Mode after="always" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Debug Win32">
+				<Option platforms="Windows;" />
+				<Option output="testdirectory\RF2dEngine" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="C:\programming\Current Project\RF2dEngine" />
+				<Option object_output="Debug Win32" />
+				<Option type="0" />
+				<Option compiler="msvc8" />
+				<Compiler>
+					<Add option="/Zi /D_DEBUG" />
+				</Compiler>
+				<Linker>
+					<Add option="/DEBUG" />
+					<Add option="/NODEFAULTLIB:libcmt.lib" />
+					<Add library="..\..\3rdParty\luabind\msvc-8.0-sp1\lib\luabind.x86.debug.lib" />
+					<Add library="..\..\3rdParty\lua\msvc-8.0-sp1\lib\lua.x86.debug.lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="/MT" />
+			<Add option="/EHsc" />
+			<Add option="/D_CRT_SECURE_NO_WARNINGS" />
+			<Add option="/D_SCL_SECURE_NO_WARNINGS" />
+			<Add directory="..\..\3rdParty\hge181\include" />
+			<Add directory="..\..\3rdParty\sqlite3\include" />
+			<Add directory="..\..\3rdParty\RakNet\Source" />
+			<Add directory="..\..\3rdParty\lua\include" />
+			<Add directory="..\..\3rdParty\luabind\include" />
+			<Add directory="..\..\3rdParty\boost\include" />
+			<Add directory="..\..\Common" />
+			<Add directory="..\..\..\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\Include" />
+		</Compiler>
+		<Linker>
+			<Add option="/MACHINE:I386" />
+			<Add option="/pdb:.\obj\rpgengine.pdb" />
+			<Add option="/NODEFAULTLIB:libc.lib" />
+			<Add option="/NODEFAULTLIB:MSVCRT.lib" />
+			<Add option="/NODEFAULTLIB:MSVCPRT.lib" />
+			<Add library="..\..\3rdParty\hge181\lib\vc\hge.lib" />
+			<Add library="..\..\3rdParty\hge181\lib\vc\hgehelp.lib" />
+			<Add library="..\..\3rdParty\RakNet\lib\RakNetDLL.lib" />
+			<Add library="..\..\3rdParty\sqlite3\lib\sqlite3.lib" />
+			<Add directory="..\..\3rdParty\hge181\lib\vc" />
+			<Add directory="..\..\3rdParty\sqlite3\lib" />
+		</Linker>
+		<Unit filename="..\..\3rdParty\RakNet\Source\BitStream.cpp" />
+		<Unit filename="..\..\3rdParty\RakNet\Source\BitStream.h" />
+		<Unit filename="..\..\3rdParty\RakNet\Source\NetworkTypes.cpp" />
+		<Unit filename="..\..\3rdParty\RakNet\Source\NetworkTypes.h" />
+		<Unit filename="..\..\3rdParty\sqlite3\include\Database.cpp" />
+		<Unit filename="..\..\3rdParty\sqlite3\include\Database.h" />
+		<Unit filename="..\..\3rdParty\sqlite3\include\IError.h" />
+		<Unit filename="..\..\3rdParty\sqlite3\include\Query.cpp" />
+		<Unit filename="..\..\3rdParty\sqlite3\include\Query.h" />
+		<Unit filename="..\..\3rdParty\sqlite3\include\StderrLog.cpp" />
+		<Unit filename="..\..\3rdParty\sqlite3\include\StderrLog.h" />
+		<Unit filename="..\..\3rdParty\sqlite3\include\SysLog.cpp" />
+		<Unit filename="..\..\3rdParty\sqlite3\include\SysLog.h" />
+		<Unit filename="..\..\3rdParty\sqlite3\include\libsqlitewrapped.h" />
+		<Unit filename="..\..\3rdParty\sqlite3\include\sqlite3.h" />
+		<Unit filename="..\..\Common\AStar.cpp" />
+		<Unit filename="..\..\Common\AStar.h" />
+		<Unit filename="..\..\Common\GameState.h" />
+		<Unit filename="..\..\Common\Resource.h" />
+		<Unit filename="..\..\Common\Sorts.h" />
+		<Unit filename="..\..\Common\StateManager.cpp" />
+		<Unit filename="..\..\Common\StateManager.h" />
+		<Unit filename="..\..\Common\ini.cpp" />
+		<Unit filename="..\..\Common\ini.h" />
+		<Unit filename="..\..\Common\strfunctions.cpp" />
+		<Unit filename="..\..\Common\strfunctions.h" />
+		<Unit filename="History.ico" />
+		<Unit filename="source\MPlayerStructures.h" />
+		<Unit filename="source\PacketEnumerations.h" />
+		<Unit filename="source\RF2d_AniStorage.cpp" />
+		<Unit filename="source\RF2d_AniStorage.h" />
+		<Unit filename="source\RF2d_Application.cpp" />
+		<Unit filename="source\RF2d_Application.h" />
+		<Unit filename="source\RF2d_AreaFill.cpp" />
+		<Unit filename="source\RF2d_AreaFill.h" />
+		<Unit filename="source\RF2d_BattleControl.cpp" />
+		<Unit filename="source\RF2d_BattleControl.h" />
+		<Unit filename="source\RF2d_CallBackHeader.cpp" />
+		<Unit filename="source\RF2d_CallBackHeader.h" />
+		<Unit filename="source\RF2d_CharGUI.cpp" />
+		<Unit filename="source\RF2d_CharGUI.h" />
+		<Unit filename="source\RF2d_CloudShadows.cpp" />
+		<Unit filename="source\RF2d_CloudShadows.h" />
+		<Unit filename="source\RF2d_Cursor.cpp" />
+		<Unit filename="source\RF2d_Cursor.h" />
+		<Unit filename="source\RF2d_EffectObject.cpp" />
+		<Unit filename="source\RF2d_EffectObject.h" />
+		<Unit filename="source\RF2d_Fader.cpp" />
+		<Unit filename="source\RF2d_Fader.h" />
+		<Unit filename="source\RF2d_FogControl.cpp" />
+		<Unit filename="source\RF2d_FogControl.h" />
+		<Unit filename="source\RF2d_GUIControls.cpp" />
+		<Unit filename="source\RF2d_GUIControls.h" />
+		<Unit filename="source\RF2d_GUIManager.cpp" />
+		<Unit filename="source\RF2d_GUIManager.h" />
+		<Unit filename="source\RF2d_GUIWindow.cpp" />
+		<Unit filename="source\RF2d_GUIWindow.h" />
+		<Unit filename="source\RF2d_GameObject.cpp" />
+		<Unit filename="source\RF2d_GameObject.h" />
+		<Unit filename="source\RF2d_GameObjectManager.cpp" />
+		<Unit filename="source\RF2d_GameObjectManager.h" />
+		<Unit filename="source\RF2d_GameObjectManagerMPly.cpp" />
+		<Unit filename="source\RF2d_Light.cpp" />
+		<Unit filename="source\RF2d_Light.h" />
+		<Unit filename="source\RF2d_MPlayer.cpp" />
+		<Unit filename="source\RF2d_MPlayer.h" />
+		<Unit filename="source\RF2d_MapObject.cpp" />
+		<Unit filename="source\RF2d_MapObject.h" />
+		<Unit filename="source\RF2d_Projectile.cpp" />
+		<Unit filename="source\RF2d_Projectile.h" />
+		<Unit filename="source\RF2d_Scripting.cpp" />
+		<Unit filename="source\RF2d_Scripting.h" />
+		<Unit filename="source\RF2d_SnowControl.cpp" />
+		<Unit filename="source\RF2d_SnowControl.h" />
+		<Unit filename="source\RF2d_SnowFlake.cpp" />
+		<Unit filename="source\RF2d_SnowFlake.h" />
+		<Unit filename="source\RF2d_Sound.cpp" />
+		<Unit filename="source\RF2d_Sound.h" />
+		<Unit filename="source\RF2d_SoundManager.cpp" />
+		<Unit filename="source\RF2d_SoundManager.h" />
+		<Unit filename="source\RF2d_SpellObject.cpp" />
+		<Unit filename="source\RF2d_SpellObject.h" />
+		<Unit filename="source\RF2d_StaticTextures.cpp" />
+		<Unit filename="source\RF2d_StaticTextures.h" />
+		<Unit filename="source\RF2d_TargetObject.cpp" />
+		<Unit filename="source\RF2d_TargetObject.h" />
+		<Unit filename="source\RF2d_UsedResourceTracker.cpp" />
+		<Unit filename="source\RF2d_UsedResourceTracker.h" />
+		<Unit filename="source\RF2d_WaterControl.cpp" />
+		<Unit filename="source\RF2d_WaterControl.h" />
+		<Unit filename="source\RF2d_WeatherControl.cpp" />
+		<Unit filename="source\RF2d_WeatherControl.h" />
+		<Unit filename="source\RF3d_Global.h" />
+		<Unit filename="source\WinMain.cpp" />
+		<Unit filename="source\WinMain.h" />
+		<Unit filename="source\gui_CharSelect.cpp" />
+		<Unit filename="source\gui_CharSelect.h" />
+		<Unit filename="source\gui_ChatWindow.cpp" />
+		<Unit filename="source\gui_ChatWindow.h" />
+		<Unit filename="source\gui_ConnectWindow.cpp" />
+		<Unit filename="source\gui_ConnectWindow.h" />
+		<Unit filename="source\gui_HostWindow.cpp" />
+		<Unit filename="source\gui_HostWindow.h" />
+		<Unit filename="source\gui_LobbyWindow.cpp" />
+		<Unit filename="source\gui_LobbyWindow.h" />
+		<Unit filename="source\gui_MapSelect.cpp" />
+		<Unit filename="source\gui_MapSelect.h" />
+		<Unit filename="source\gui_support_CharSelectItem.cpp" />
+		<Unit filename="source\gui_support_CharSelectItem.h" />
+		<Unit filename="source\menuitem.cpp" />
+		<Unit filename="source\menuitem.h" />
+		<Unit filename="source\state_menu_MPlayer.cpp" />
+		<Unit filename="source\state_menu_MPlayer.h" />
+		<Unit filename="source\state_menu_Main.cpp" />
+		<Unit filename="source\state_menu_Main.h" />
+		<Unit filename="source\state_render_GameWindow.cpp" />
+		<Unit filename="source\state_render_GameWindow.h" />
+		<Unit filename="source\state_render_LoadScreen.cpp" />
+		<Unit filename="source\state_render_LoadScreen.h" />
+		<Unit filename="source\state_render_MPlayGameWindow.cpp" />
+		<Unit filename="source\state_render_MPlayGameWindow.h" />
+		<Unit filename="source\state_render_SingleGUIWindow.cpp" />
+		<Unit filename="source\state_render_SingleGUIWindow.h" />
+		<Unit filename="source\state_render_TeamSelectWindow.cpp" />
+		<Unit filename="source\state_render_TeamSelectWindow.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

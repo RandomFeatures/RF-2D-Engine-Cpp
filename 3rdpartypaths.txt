@@ -1,0 +1,9 @@
+C:\programming\3rdParty\lua-4.0.1\src\lib
+C:\programming\3rdParty\RakNet\lib
+C:\programming\3rdParty\hge153\lib\vc
+
+
+
+C:\programming\3rdParty\lua-4.0.1\include
+C:\programming\3rdParty\RakNet\Source
+C:\programming\3rdParty\hge153\include
